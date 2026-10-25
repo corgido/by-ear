@@ -1,0 +1,5 @@
+node_modules/
+dist/
+*.wav
+*.mp4
+*.f32

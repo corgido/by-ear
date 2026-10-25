@@ -1,0 +1,48 @@
+{
+  "name": "by-ear",
+  "version": "0.1.0",
+  "description": "A race car's telemetry from its sound: revs, shifts, gear, speed, throttle and laps from an onboard recording, live or after the fact.",
+  "license": "MIT",
+  "author": "corgido",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corgido/by-ear.git"
+  },
+  "keywords": [
+    "telemetry",
+    "motorsport",
+    "sim-racing",
+    "audio-analysis",
+    "signal-processing",
+    "engine",
+    "rpm",
+    "onboard"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "by-ear": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepare": "npm run build",
+    "pretest": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^5.0.5"
+  },
+  "homepage": "https://github.com/corgido/by-ear#readme",
+  "private": true
+}
